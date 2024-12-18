@@ -1,0 +1,19 @@
+{
+  "name": "scraping-sites",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prestart": "pnpm exec playwright install",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.12.1",
+    "playwright": "^1.49.1"
+  }
+}
