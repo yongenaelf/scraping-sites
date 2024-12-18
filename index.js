@@ -22,7 +22,7 @@ const crawler = new PlaywrightCrawler({
     await Actor.pushData({
       title,
       url: request.loadedUrl,
-      content: await page.content(),
+      content: await page.textContent("article"),
     });
 
     // We simplified enqueuing links a lot, see the docs.
